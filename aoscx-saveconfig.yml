@@ -6,6 +6,6 @@
     - name: Copy Running Config to TFTP server as Golden Config
       aoscx_backup_config:
         config_name: 'running-config'
-        remote_output_file_tftp_path: 'tftp://192.168.1.2/golden_config.cli'
+        remote_output_file_tftp_path: 'tftp://{{ var_tftp }}/golden_config.cli'
         config_type: 'cli'
-        vrf: 'mgmt'
+        vrf: 'default'
