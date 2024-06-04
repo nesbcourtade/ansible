@@ -1,5 +1,3 @@
----
-  - name: aoscx-ansible-role
-     scm: git
-     src: https://github.com/aruba/aoscx-ansible-role.git
-     version: master
+roles:
+  - name: arubanetworks.aoscx_role
+     source: https://galaxy.ansible.com
