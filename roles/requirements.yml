@@ -1,6 +1,0 @@
-roles:
-  # Install Ansible.netcommon from Ansible Galaxy
-  - name: arubanetworks.aoscx
-    source: https://galaxy.ansible.com
-  - name: arubanetworks.aos_switch
-    source: https://galaxy.ansible.com
