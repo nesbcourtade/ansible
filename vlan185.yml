@@ -1,7 +1,7 @@
-     - name: configure vlan with voice
-       arubaoss_vlan:
-         vlan_id: 185
-         name: "NES_Phones"
-         is_voice_enabled: false # <= here
-         config: "create"
-         command: config_vlan
+- name: configure vlan with voice
+  arubaoss_vlan:
+    vlan_id: 185
+    name: NES_Phones
+    is_voice_enabled: false
+    config: create
+    command: config_vlan
