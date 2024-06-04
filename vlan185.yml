@@ -1,7 +1,12 @@
-- name: configure vlan with voice
-  aoscx_vlan::
-    vlan_id: 185
-    name: NES_Phones
-    is_voice_enabled: false
-    config: create
-    command: config_vlan
+---
+- name: "configure vlan with voice"
+  hosts: "{{ target_hosts | default('all') }}"
+  gather_facts: false
+  tasks:
+    - name: configure vlan with voice
+      aoscx_vlan::
+      vlan_id: 185
+      name: NES_Phones
+      is_voice_enabled: false
+      config: create
+      command: config_vlan
