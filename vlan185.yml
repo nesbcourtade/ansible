@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: configure vlan with voice
-      aoscx_vlan::
+      aoscx_vlan:
         vlan_id: 185
         name: NES_Phones
         is_voice_enabled: false
