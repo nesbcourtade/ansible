@@ -1,4 +1,1 @@
----
-roles: []
-  - name: arubanetworks.aoscx_role
-     source: https://galaxy.ansible.com
+ - name: arubanetworks.aoscx_role
