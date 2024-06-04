@@ -8,5 +8,3 @@
         vlan_id: 185
         name: NES_Phones
         is_voice_enabled: false
-        config: create
-        command: config_vlan
