@@ -1,5 +1,4 @@
-roles:
-  # ### Github
+---
   - name: aoscx-ansible-role
      scm: git
      src: https://github.com/aruba/aoscx-ansible-role.git
