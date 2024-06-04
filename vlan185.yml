@@ -2,6 +2,8 @@
 - name: "configure vlan with voice"
   hosts: "{{ target_hosts | default('all') }}"
   gather_facts: false
+  collections:
+    - arubanetworks.aoscx
   tasks:
     - name: configure vlan with voice
       aoscx_vlan:
